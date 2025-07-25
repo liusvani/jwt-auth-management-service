@@ -67,12 +67,12 @@ It also incorporates a highly customizable authentication and access control sys
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/WEECOVER/ms-campaign-manager.git
+   git clone https://github.com/jwt-auth-management-service/ms-security.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd ms-campaign-manager
+   cd ms-security
    ```
 
 3. Build the project:
@@ -91,36 +91,26 @@ It also incorporates a highly customizable authentication and access control sys
 
 ## Example Payloads
 
-### Campaign Payloads
-#### Create Campaign
+### Security Payloads
+#### Create User
 ```json
 {
-  "name": "Winter Sale",
-  "description": "End of year discounts",
-  "startDate": "2025-01-01",
-  "endDate": "2025-02-01",
-  "status": "ACTIVE"
+    "username": "voldemore",
+    "password": "Voldemore2024*",
+    "email": "voldemore@gmail.com",
+    "firstName": "Lord",
+    "lastName": "Voldemore",
+    "role": "USER"
 }
+
 ```
 
-### Discount Payloads
-#### Create Discount
+### Auth Payloads
+#### Login
 ```json
 {
-  "campaignId": 1,
-  "code": "WINTER20",
-  "type": "PERCENTAGE",
-  "value": 20,
-  "usageLimit": 100
-}
-```
-
-### Coupon Payloads
-#### Generate Coupons
-```json
-{
-  "discountId": 1,
-  "quantity": 50
+    "username": "admin",
+    "password": "Admin123*-+"
 }
 ```
 
