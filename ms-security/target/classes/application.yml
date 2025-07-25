@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ms-security
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_db
+    username: postgres
+    password: Pgadmin1992
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: 6cFu?DCi{mLF9O]-TF<Y>Uf.j5dTwEw.?A{=P5qO*!wwz38gJ$4[*+hj.M{ktn%ExtraSeguroParaHS512!
+  expiration:
+    access: 600000
+    refresh: 604800000
